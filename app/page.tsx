@@ -1,10 +1,14 @@
 import React from "react";
-import Editor from "./components/Editor";
+import Todo from "./components/Todo";
+import { Suspense } from "react";
 
-export default function page() {
+export default async function page() {
 	return (
 		<div className=" bg-slate-100 h-screen py-10">
-			<Editor />
+			<h1>Hello world</h1>
+			<Suspense fallback={<h1>Loading....</h1>}>
+				<Todo />
+			</Suspense>
 		</div>
 	);
 }
