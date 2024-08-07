@@ -18,8 +18,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<Link href={"/"}>home</Link>
-				<Link href={"/test"}>home</Link>
+				<div className="space-x-4">
+					<Link href={"/bad-page"}>bad-page</Link>
+					<Link href={"/better-page"}>better-page</Link>
+					<Link href={"/even-better-page"}>even-better-page</Link>
+				</div>
 				{children}
 			</body>
 		</html>
