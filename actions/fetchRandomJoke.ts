@@ -7,6 +7,5 @@ export const fetchRandomJoke = async () => {
 		"https://official-joke-api.appspot.com/random_joke"
 	);
 	const data = await res.json();
-	await sleep(3000);
 	return data;
 };
